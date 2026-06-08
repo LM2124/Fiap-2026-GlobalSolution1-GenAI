@@ -1,0 +1,27 @@
+[project]
+name = "GS-GenAI"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "~=3.11.0" # must be 3.11 because of pycaret
+dependencies = [
+    "gradio~=6.16.0",
+    "joblib~=1.3.2",
+    "kagglehub[pandas-datasets]~=1.0.1",
+    "matplotlib~=3.7.5",
+    "pandas~=2.1.4",
+    "pycaret~=3.3.2",
+    "scikit-learn~=1.4.2",
+    "seaborn~=0.13.2",
+    "shap~=0.49.1",
+    # xgboost downgraded from 3.1 because a breaking change caused a problem with shap,
+    # which shap fixed in 0.50, but can't upgrade to that version because they
+    # broke support for python 3.11 while saying they only dropped support for 3.10.
+    # This is proper dependency hell!
+    "xgboost~=3.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel~=7.2.0",
+]
