@@ -88,7 +88,7 @@ Este projeto não é apenas um exercício de ML; é um protótipo de um sistema 
     cd Fiap-2026-GlobalSolution1-GenAI
     ```
 2. **Ambiente Virtual e Dependências:**
-    Instale as dependências usando [`uv`](https://docs.astral.sh/uv/getting-started/installation/) para garantir um ambiente rápido e isolado.
+    Instale as dependências usando [`uv`](https://docs.astral.sh/uv/getting-started/installation/) para garantir um ambiente isolado, com as versões de pacotes corretas.
     ```bash
     uv sync
     ```
