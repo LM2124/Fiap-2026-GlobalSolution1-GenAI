@@ -85,14 +85,18 @@ Este projeto não é apenas um exercício de ML; é um protótipo de um sistema 
 1. **Clonar o Repositório:**
     ```bash
     git clone https://github.com/LM2124/Fiap-2026-GlobalSolution1-GenAI.git
-    cd GenAI
+    cd Fiap-2026-GlobalSolution1-GenAI
     ```
 2. **Ambiente Virtual e Dependências:**
-    Instale as dependências usando `uv` para garantir um ambiente rápido e isolado.
+    Instale as dependências usando [`uv`](https://docs.astral.sh/uv/getting-started/installation/) para garantir um ambiente rápido e isolado.
     ```bash
     uv sync
     ```
-3. **Execução:**
-    Execute o notebook `main.ipynb` no ambiente Jupyter.
+3. **Execução (Jupyter Notebook):**
+    Execute o notebook `main.ipynb` no ambiente Jupyter usando o comando:
+    ```bash
+    uv run jupyter notebook main.ipynb
+    ```
+    > *Alternativamente, você pode executar o notebook diretamente em um ambiente de IDE como o VS Code.*
 4. **Resultado:**
     O último bloco de código (Gradio) iniciará um servidor local, permitindo a interação com o classificador.

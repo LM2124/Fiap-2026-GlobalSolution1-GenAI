@@ -6,7 +6,9 @@ readme = "README.md"
 requires-python = "~=3.11.0" # must be 3.11 because of pycaret
 dependencies = [
     "gradio~=6.16.0",
+    "ipykernel~=7.2.0",
     "joblib~=1.3.2",
+    "jupyter~=1.1.1",
     "kagglehub[pandas-datasets]~=1.0.1",
     "matplotlib~=3.7.5",
     "pandas~=2.1.4",
@@ -19,9 +21,4 @@ dependencies = [
     # broke support for python 3.11 while saying they only dropped support for 3.10.
     # This is proper dependency hell!
     "xgboost~=3.0.0",
-]
-
-[dependency-groups]
-dev = [
-    "ipykernel~=7.2.0",
 ]
